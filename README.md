@@ -2,32 +2,16 @@
 
 ## Overview
 
-findNeedles() method returns the number of occurrences of a word (if exists) in a sentence. The method can search up to 5 words and log number of occurrence(s) for each word.  Split function used in the method will split given haystack string using the following literals: 
+findNeedles() method can search up to five words in an input argument string, count and log the number of occurrence(s) for each word. The method uses split funciton to split the given input argument string using following literals: ```\"\'\t\n\b\f\r ```
 
-```\"\'\t\n\b\f\r ```
-
-```\"``` double quotes character  
-```\'``` single quote character  
-```\t``` tab space character  
-```\n``` new line character  
-```\b``` back space character  
-```\f``` form feed character  
-```\r``` carriage return  
-
-**Inputs:**  
- This method uses following input parameters:  
-* 	```haystack```: A string of any length  
-* 	```needles``` : An array of words used to search against the text in haystack
-
-**Console Outputs:**  
-* If ```needles``` (words) length is less than or equal to 5, the method returns a list of words along with the number of occurrences of each word from ```haystack``` (sentence) as shown below:  
-    * needles[0]: number of occurrences in haystack  
-    * needles[1]: number of occurrences in haystack  
-    * needles[2]: number of occurrences in haystack  
-    * needles[3]: number of occurrences in haystack  
-    * needles[4]: number of occurrences in haystack  
- * If needles (words) length is greater 5, method returns following error message:  
-    “Too many words!”  
+```\"``` Double quotes character  
+```\'``` Single quote character  
+```\t``` Tab space character  
+```\n``` New line character  
+```\b``` Back space character  
+```\f``` Form feed character  
+```\r``` Carriage return  
+### findNeedles()
  ```
      public static void findNeedles(String haystack, String[] needles) {
         if (needles.length > 5) {
@@ -49,6 +33,21 @@ findNeedles() method returns the number of occurrences of a word (if exists) in 
     }
  
  ```  
+**Inputs:**  
+ This method uses following input parameters:  
+* 	```haystack```A string of any length  
+* 	```needles``` An array of words used to search against the text in haystack
+
+**Console Outputs:**  
+* If ```needles``` (words) length is less than or equal to five, the method returns a list of words along with the number of occurrences of each word from ```haystack``` (sentence) as shown below:  
+    * needles[0]: number of occurrences in haystack  
+    * needles[1]: number of occurrences in haystack  
+    * needles[2]: number of occurrences in haystack  
+    * needles[3]: number of occurrences in haystack  
+    * needles[4]: number of occurrences in haystack  
+ * If ```needles``` (words) length is greater five, method returns following error message:  
+    “Too many words!”  
+
  
  ## Calling the Method  
  
@@ -61,10 +60,9 @@ findNeedles() method returns the number of occurrences of a word (if exists) in 
 ```  
 ## Limitations
   
- •	This method can only accept five or less search arguments (words). If else, an error message will be logged in the console
-    &nbsp;&nbsp;&nbsp;o	Too many words!
-  •	Input arguments with punctuation are recognized as different words. Example, “Hello” and “Hello!” considered as two different words.
-  •	Input arguments are case sensitive. Example, “There” and “there” considered as two different words.
+* This method can only accept five or less search arguments (words). If else, an error message will be logged in the console.  
+* Input arguments with punctuation are recognized as different words. Example, “Hello” and “Hello!” considered as two different words.  
+* Input arguments are case sensitive. Example, “There” and “there” considered as two different words.  
  
 ## Test Cases  
 
@@ -90,7 +88,7 @@ findNeedles() method returns the number of occurrences of a word (if exists) in 
   ### Performance:
 
    * **Split function can be called before the ```For Loop```**  
-     * This reduces CPU and memory usage since current code regex computation and split call happens for each iteration 
+     * This reduces CPU and memory usage since current code regex computation and split call happens for each iteration.  
 
   ```
   else {
@@ -106,7 +104,7 @@ findNeedles() method returns the number of occurrences of a word (if exists) in 
   ```  
   ### Accessibility:
    * **Method can return an output**  
-      * Current code logs outputs in the console, instead an array containing the list of outputs can be returned  
+      * Current code logs outputs in the console, instead an array containing the list of outputs can be returned.   
    * **Too many arguments can return error**
      * Instead of logging error in the console, send an error message back to the calling routine.
 
