@@ -72,19 +72,19 @@ findNeedles() method returns the number of occurrences of a word (if exists) in 
   ```findNeedles("hello there hello! There is an apple macbook", {"hello", "there", "mac", "one", "123"});```  
 
   **Console Output:**  
-  @image1  
+ ![Test case 1 output](https://github.com/hemsmalli5/Writing-Sample-findNeedle-/blob/main/testCase1_Output.png)  
 
   ### Test Case 2:
   ```findNeedles("hello'there hello! There is an apple macbook", {"hello", "there", "There"});```  
 
   **Console Output:**  
-  @image2  
+  ![Test case 2 output](https://github.com/hemsmalli5/Writing-Sample-findNeedle-/blob/main/testCase2_Output.png)    
 
   ### Test Case 3:
   ```findNeedles("hello'there hello! There is an apple macbook", {"hello", "there", "time", "apple", "test", "orange"});```  
 
   **Console Output:**  
-  @image3  
+  ![Test case 3 output](https://github.com/hemsmalli5/Writing-Sample-findNeedle-/blob/main/testCase3_Output.png)    
 
 ## Suggested Future Improvements
   ### Performance:
