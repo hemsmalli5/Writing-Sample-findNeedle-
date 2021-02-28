@@ -2,7 +2,7 @@
 
 ## Overview
 
-findNeedles() method can search up to five words in an input argument string, count and log the number of occurrence(s) for each word. The method uses split funciton to split the given input argument string using following literals: ```\"\'\t\n\b\f\r ```
+findNeedles() method can search up to five words in an input argument string, count and log the number of occurrence(s) for each word. The method uses split function to split the given input argument string using following literals: ```\"\'\t\n\b\f\r ```
 
 ```\"``` double quotes character  
 ```\'``` single quote character  
