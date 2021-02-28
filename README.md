@@ -4,13 +4,13 @@
 
 findNeedles() method can search up to five words in an input argument string, count and log the number of occurrence(s) for each word. The method uses split funciton to split the given input argument string using following literals: ```\"\'\t\n\b\f\r ```
 
-```\"``` Double quotes character  
-```\'``` Single quote character  
-```\t``` Tab space character  
-```\n``` New line character  
-```\b``` Back space character  
-```\f``` Form feed character  
-```\r``` Carriage return  
+```\"``` double quotes character  
+```\'``` single quote character  
+```\t``` tab space character  
+```\n``` new line character  
+```\b``` back space character  
+```\f``` form feed character  
+```\r``` carriage return character    
 ### findNeedles()
  ```
      public static void findNeedles(String haystack, String[] needles) {
@@ -35,8 +35,8 @@ findNeedles() method can search up to five words in an input argument string, co
  ```  
 **Inputs:**  
  This method uses following input parameters:  
-* 	```haystack```A string of any length  
-* 	```needles``` An array of words used to search against the text in haystack
+* 	```haystack```a string of any length  
+* 	```needles``` an array of words used to search against the text in haystack
 
 **Console Outputs:**  
 * If ```needles``` (words) length is less than or equal to five, the method returns a list of words along with the number of occurrences of each word from ```haystack``` (sentence) as shown below:  
