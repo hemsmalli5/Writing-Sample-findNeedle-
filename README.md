@@ -39,17 +39,17 @@ findNeedles() API method searches up to five words in an input argument string, 
 * 	```needles``` an array of words used to search against the text in haystack
 
 **Console Outputs:**  
-* If ```needles``` (words) length is less than or equal to five, the method returns a list of words along with the number of occurrences of each word from ```haystack``` (sentence) as shown below:  
-    * needles[0]: number of occurrences in haystack  
-    * needles[1]: number of occurrences in haystack  
-    * needles[2]: number of occurrences in haystack  
-    * needles[3]: number of occurrences in haystack  
-    * needles[4]: number of occurrences in haystack  
- * If ```needles``` (words) length is greater five, method returns following error message:  
+* If ```needles``` (words) length is less than or equal to five, the method logs the search words along with the number of occurrences from ```haystack``` (sentence) as shown below:  
+    * needles[0]: number of occurrences   
+    * needles[1]: number of occurrences  
+    * needles[2]: number of occurrences  
+    * needles[3]: number of occurrences    
+    * needles[4]: number of occurrences    
+ * If ```needles``` (words) length is greater five, method logs following error message:  
     “Too many words!”  
 
  
- ## Calling the Method  
+ ## Calling the API Method  
  
   This method requires an input string: ```haystack``` and an array of search words: ```needles```  
   
@@ -87,8 +87,8 @@ findNeedles() API method searches up to five words in an input argument string, 
 ## Suggested Future Improvements
   ### Performance:
 
-   * **Split function can be called before the ```For Loop```**  
-     * This reduces CPU and memory usage since current code regex computation and split call happens for each iteration.  
+   * **Split function can be called before ```For Loop```**  
+     * This reduces CPU and memory usage since the current code regex computation and split call happen for each iteration.  
 
   ```
   else {
@@ -104,7 +104,7 @@ findNeedles() API method searches up to five words in an input argument string, 
   ```  
   ### Accessibility:
    * **Method can return an output**  
-      * Current code logs outputs in the console, instead an array containing the list of outputs can be returned.   
-   * **Too many arguments can return error**
-     * Instead of logging error in the console, send an error message back to the calling routine.
+      * Current code logs output in the console, alternatively an array containing the list of outputs can be returned.   
+   * **Input search argument beyond five words can return error**
+      * Current code logs error in the console, additionally code can be modified to send an error message back to the calling routine.
 
